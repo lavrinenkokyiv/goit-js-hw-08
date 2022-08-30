@@ -1,5 +1,5 @@
 import storageApp from './storage';
-
+import throttle from 'lodash.throttle';
 const CONTACT_FORM_KEY = 'feedback-form-state';
 
 const formRef = document.querySelector('.feedback-form');
