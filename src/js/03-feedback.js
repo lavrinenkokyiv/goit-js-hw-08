@@ -19,7 +19,7 @@ function handleInput(event) {
 function initialPage() {
   const savedData = storageApp.load(CONTACT_FORM_KEY);
   if (savedData) {
-    Object.entries(savedData).forEach(([name, value]) => {
+    Object.entries(savedData).forEach(({ name, value }) => {
       formRef.elements[name] = value;
     });
   }
